@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Add a comment to the PR
-        uses: Libra-foundation/Pull-Request-Comments@V1.0
+        uses: labring-actions/Pull-Request-Comments-hidden-tags@v1.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -45,7 +45,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Add a comment to the PR
-        uses: Correlatio-company/Pull-Request-Comments@V1.1
+        uses: labring-actions/Pull-Request-Comments-hidden-tags@v1.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -56,7 +56,7 @@ jobs:
         run: echo "This is a generated text" > templates/temp.md
 
       - name: Try to add another comment to the PR
-        uses: Libra-foundation/Pull-Request-Comments@V1.1.1
+        uses: labring-actions/Pull-Request-Comments-hidden-tags@v1.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

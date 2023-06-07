@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Add a comment to the PR
-        uses: Libra-foundation/Pull-Request-Comments@development
+        uses: labring-actions/Pull-Request-Comments-hidden-tags@v1.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
