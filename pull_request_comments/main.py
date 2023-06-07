@@ -75,7 +75,8 @@ if tag == "":
             sys.exit(0)
     pr.create_issue_comment(comment)
 else:
-    comment += "\n tag:" + tag
+    comment += "\n <!--"+tag+"-->"
+
     if pr_comment is None:
         pr.create_issue_comment(comment)
     else:
