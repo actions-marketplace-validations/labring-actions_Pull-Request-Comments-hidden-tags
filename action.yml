@@ -1,4 +1,4 @@
-name: "Pull Request Comments"
+name: "Pull Request Comments for hidden tag"
 description: "Add comments on PRs based on templates."
 author: "Correlatio"
 inputs:
