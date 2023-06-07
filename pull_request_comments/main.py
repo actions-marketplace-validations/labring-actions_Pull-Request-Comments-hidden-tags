@@ -55,7 +55,7 @@ pr_comment = None
 if tag != "":
     for existing in comments:
         print(existing.body)
-        if existing.body.endswith(tag):
+        if existing.body.endswith("<!--"+tag+"-->"):
             if override:
                 pr_comment = existing
             else:
