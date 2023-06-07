@@ -1,4 +1,4 @@
-# Pull Request Comment
+# Pull-Request-Comments-hidden-tags
 
 A GitHub action which adds comments on PRs based on templates.
 
