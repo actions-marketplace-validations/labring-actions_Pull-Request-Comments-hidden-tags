@@ -3,7 +3,6 @@ name: Dev test
 
 on:
   pull_request:
-    branches: [ "development" ]
 
 jobs:
   comment:
@@ -12,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Add a comment to the PR
         uses: Libra-foundation/Pull-Request-Comments@development
         env:

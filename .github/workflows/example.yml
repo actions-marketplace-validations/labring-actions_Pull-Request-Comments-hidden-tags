@@ -3,10 +3,9 @@
 name: Example
 
 # Controls when the workflow will run
-# This workflow does only support running on PR. 
+# This workflow does only support running on PR.
 on:
   pull_request:
-    branches: ["main"]
 
 jobs:
   comment:
@@ -15,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Add a comment to the PR
         uses: Libra-foundation/Pull-Request-Comments@V1.0
         env:
